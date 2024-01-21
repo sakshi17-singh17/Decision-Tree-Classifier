@@ -9,11 +9,10 @@ This project will involve creating a Decision Tree Classifier algorithm to perfo
 ### Pseudo-Code
 Below is the Pseudo-code for decision tree classifier:
 
-1. Fit the data which on the X and Y received and instantiate the next function, generateTree.
-2. generateTree will take the data and divide it into feature and labels and pass to bestSplitter.
-3. bestSplitter, splits the left and right leaf based on criterion using thresholds calculated by thresholdMidpoints().
-4. For Gini criterion, information gain will be calculated using giniScore method.
-5. Similarly, for entropy we will calculate information gain using entropyScore method.
-6. Once done, return the values to fit generateTree and calculate recursively for left and right tree.
-7. Finally returning to fit value and save it to root variable.
-8. And predict test values based on the root.
+1. Fit the data received on X and Y, then proceed to instantiate the next function known as `generateTree`. Within this function, the data is divided into features and labels, and subsequently passed to the function named `bestSplitter`.
+
+2. `bestSplitter` is responsible for splitting the left and right leaf based on a given criterion, utilizing thresholds determined by the `thresholdMidpoints()` method. Specifically, for the Gini criterion, the information gain is computed through the `giniScore` method. Likewise, for the entropy criterion, information gain is determined using the `entropyScore` method.
+
+3. Upon completion of these calculations, the values are returned to the `generateTree` function, which performs a recursive calculation for both the left and right branches of the tree. The calculated values are then returned to the `fit` function and stored in the root variable.
+
+4. Subsequently, predictions for test values are made based on the root of the decision tree.
