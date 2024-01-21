@@ -1,6 +1,13 @@
 # Decision-Tree-Classifier
 
-Below is the psudo-code for decision tree classifier:
+### Objective:
+The goal of this project is to design, implement, and evaluate a Decision Tree Classifier from scratch without relying on external machine learning libraries. Decision trees are fundamental components of many machine learning algorithms, and creating one from scratch will deepen our understanding of the underlying principles and algorithms governing decision tree construction.
+
+### Scope:
+This project will involve creating a Decision Tree Classifier algorithm to perform binary classification. The scope includes defining the structure of the tree, implementing the algorithms for building the tree, and incorporating mechanisms for making predictions based on input features.
+
+### Pseudo-Code
+Below is the Pseudo-code for decision tree classifier:
 
 1. Fit the data which on the X and Y received and instantiate the next function, generateTree.
 2. generateTree will take the data and divide it into feature and labels and pass to bestSplitter.
